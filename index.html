@@ -16,7 +16,7 @@
         h1{
             font-size: 65px;
             font-style: solid;
-            color: rgb(31, 31, 31);
+            color: rgb(78, 76, 76);
             text-align: center;
             float: center;
             padding: 25px;
@@ -24,6 +24,12 @@
         ul{
            font-size: 20px;
            list-style-type: none;
+        }
+        div li{
+            color:red;
+        }
+        table{
+            text-align: center;
         }
         footer{
             text-align: center;
@@ -34,16 +40,46 @@
 </head>
 
 <body>
-    <h1>Welcome to Patagony test page</h1>
+    <h1>Welcome to <span style="font-style: italic">Patagony</span> WEB page</h1>
     
     <ul>
+        <div>
         <li>Line 1</li>
-        <li>Line 2</li>
+        <li>Line 2
+        </div>    
+            <ul>
         <li>Line 3</li>
         <li>Line 4</li>
         <li>Line 5</li>
+            </ul>
         <li>Line 6</li>
     </ul>
+    
+    <table border="2" width="50%" align="center">
+        <thead>
+            <tr>
+                <th>naglowek1</th>
+                <th>naglowek2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>stopka1</td>
+                <td>stopka2</td>
+            </tr>
+        </tfoot>
+    </table>
+    
     
     <footer>..::Footer::..</footer>
 
