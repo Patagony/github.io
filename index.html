@@ -43,7 +43,7 @@
         h2 {
             font-size: 35px;
             font-style: solid;
-            color: rgb(0, 0, 0);
+            color: rgb(78, 76, 76);
             text-align: left;
             padding: 25px;
         }
@@ -98,6 +98,18 @@
                 <li><span class="fas fa-arrow-right"></span> Asia</li>
             </div>
         </ul>
+        <li>
+                <script type="text/javascript">
+                    var click = 0;
+                    function onClick() {
+                        click += 1;
+                        document.getElementById("clicks").innerHTML = click;
+                    };
+                    </script>
+                    <p></p>
+                    <button type="button" onClick="onClick()">Click here to add clicks :)</button>
+                    <p>Clicks: <a id="clicks">0</a></p>
+        </li>
 
     </ul>
 
