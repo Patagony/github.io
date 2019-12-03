@@ -46,6 +46,13 @@ table {
     margin-right: auto;
 }
 
+.lorem {
+    align-content: center;
+    margin: 50px 50px 50px 50px ;
+    max-width: auto;
+    max-height: 500px;
+}
+
 footer {
     text-align: center;
     font-style: italic;
