@@ -47,6 +47,7 @@ table {
 }
 
 .lorem {
+    padding-top: 20px;
     align-content: center;
     margin: 50px 50px 50px 50px;
     max-width: auto;
