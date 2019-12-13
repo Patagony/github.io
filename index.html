@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -27,143 +27,144 @@
 </head>
 
 <body>
-    <!--H1 / MENU BUTTON-->
+<!--H1 / MENU BUTTON-->
 
-    <div class="container rounded" style="background-color:rgb(98, 106, 112);">
-        <h1>Welcome to <span style="font-style: italic">Patagony</span> shop!</h1>
-    </div>
+<div class="container rounded" style="background-color:rgb(98, 106, 112);">
+    <h1>Welcome to <span style="font-style: italic">Patagony</span> shop!</h1>
+</div>
 
-    <div class="dropdown" style="padding: 6px;" align=center>
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+<div class="dropdown" style="padding: 6px;" align=center>
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            Menu
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Home</a>
-            <a class="dropdown-item" href="#">Products</a>
-            <a class="dropdown-item" href="#">Contact</a>
-            <a class="dropdown-item" href="#">About us</a>
-        </div>
+        Menu
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Home</a>
+        <a class="dropdown-item" href="#">Products</a>
+        <a class="dropdown-item" href="#">Contact</a>
+        <a class="dropdown-item" href="#">About us</a>
     </div>
+</div>
 
-    <!--OBRAZEK-->
+<!--OBRAZEK-->
 
-    <div class="container max-width: 200px float:left">
-        <img class="img-fluid"
-            src="https://image.flaticon.com/sprites/new_packs/340345-clothes-and-fashion-accessories.png">
+<div class="container max-width: 200px float:left">
+    <img class="img-fluid"
+         src="https://image.flaticon.com/sprites/new_packs/340345-clothes-and-fashion-accessories.png">
 
-        <!--H2 / LISTA / CLICKER-->
+    <!--H2 / LISTA / CLICKER-->
 
-        <h2>We offer:</h2>
+    <h2>We offer:</h2>
+    <ul>
+
+        <li><span class="fas fa-arrow-right"></span> Accesories X</li>
+        <li><span class="fas fa-arrow-right"></span> Accesories Y</li>
+        <li><span class="fas fa-arrow-right"></span> Shipping to:</li>
         <ul>
-
-            <li><span class="fas fa-arrow-right"></span> Accesories X</li>
-            <li><span class="fas fa-arrow-right"></span> Accesories Y</li>
-            <li><span class="fas fa-arrow-right"></span> Shipping to:</li>
-            <ul>
-                <div class="shipping">
-                    <li><span class="fas fa-arrow-right"></span> Europe</li>
-                    <li><span class="fas fa-arrow-right"></span> N&S America</li>
-                    <li><span class="fas fa-arrow-right"></span> Asia</li>
-                </div>
-            </ul>
-            <li>
-                <script type="text/javascript">
-                    var click = 0;
-                    function onClick() {
-                        click += 1;
-                        document.getElementById("clicks").innerHTML = click;
-                    };
-                </script>
-                <p></p>
-                <button type="button" onClick="onClick()">Click here to add clicks :)</button>
-                <p>Clicks: <a id="clicks">0</a></p>
-            </li>
-
+            <div class="shipping">
+                <li><span class="fas fa-arrow-right"></span> Europe</li>
+                <li><span class="fas fa-arrow-right"></span> N&S America</li>
+                <li><span class="fas fa-arrow-right"></span> Asia</li>
+            </div>
         </ul>
-    </div>
+        <li>
+            <script type="text/javascript">
+                var click = 0;
 
-    <!--TABELA-->
+                function onClick() {
+                    click += 1;
+                    document.getElementById("clicks").innerHTML = click;
+                };
+            </script>
+            <p></p>
+            <button type="button" onClick="onClick()">Click here to add clicks :)</button>
+            <p>Clicks: <a id="clicks">0</a></p>
+        </li>
 
-    <div>
-        <table border="2" width="50%" align="center">
-            <thead>
-                <tr>
-                    <th colspan="2">Our offer</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Accesories X</td>
-                    <td>Accesories Y</td>
-                </tr>
-                <tr>
-                    <td>Male / Female</td>
-                    <td rowspan="2">One size / Unisex</td>
-                </tr>
-                <tr>
-                    <td>
-                        <table border="2" width="50%" align="center" style="border-style: dotted;">
-                            <tr>
-                                <td>Size XS</td>
-                                <td>Size S</td>
-                            </tr>
-                            <tr>
-                                <td>Size M</td>
-                                <td>Size L</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Free shipping from 50$</td>
-                    <td>Free shipping from 100$</td>
-                </tr>
-            </tfoot>
-        </table>
-    </div>
+    </ul>
+</div>
 
-    <!--LOREM-->
+<!--TABELA-->
 
-    <div class="container">
-        <p class="lorem">Labore excepteur excepteur et sint. Et laboris qui labore laboris nulla commodo et magna ad
-            voluptate est quis.
-            Exercitation id officia ipsum pariatur est sint excepteur excepteur. Reprehenderit incididunt occaecat nisi
-            et
-            magna mollit deserunt.
+<div>
+    <table border="2" width="50%" align="center">
+        <thead>
+        <tr>
+            <th colspan="2">Our offer</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Accesories X</td>
+            <td>Accesories Y</td>
+        </tr>
+        <tr>
+            <td>Male / Female</td>
+            <td rowspan="2">One size / Unisex</td>
+        </tr>
+        <tr>
+            <td>
+                <table border="2" width="50%" align="center" style="border-style: dotted;">
+                    <tr>
+                        <td>Size XS</td>
+                        <td>Size S</td>
+                    </tr>
+                    <tr>
+                        <td>Size M</td>
+                        <td>Size L</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>Free shipping from 50$</td>
+            <td>Free shipping from 100$</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
 
-            Nisi et commodo et velit. Excepteur ipsum minim occaecat ea adipisicing aute mollit voluptate ad pariatur
-            ipsum
-            nostrud nulla. Qui cupidatat aliqua irure in anim tempor id laborum voluptate adipisicing ipsum.
-            Exercitation
-            cillum occaecat nulla amet ad eiusmod magna quis excepteur reprehenderit tempor.
+<!--LOREM-->
 
-            Velit nostrud cupidatat eiusmod occaecat ex est officia dolore nisi. Velit deserunt anim irure tempor aliqua
-            excepteur nulla est nostrud et dolor fugiat id mollit. Eu irure reprehenderit nostrud irure magna ut. Duis
-            incididunt eu velit ea sunt irure nisi amet commodo cupidatat eu.
+<div class="container">
+    <p class="lorem">Labore excepteur excepteur et sint. Et laboris qui labore laboris nulla commodo et magna ad
+        voluptate est quis.
+        Exercitation id officia ipsum pariatur est sint excepteur excepteur. Reprehenderit incididunt occaecat nisi
+        et
+        magna mollit deserunt.
 
-            Ex officia est est veniam officia velit incididunt. Sit non amet cillum officia excepteur do fugiat esse
-            aute
-            magna. Culpa dolore nisi est aliqua occaecat proident ipsum ut. Aliquip consectetur ullamco reprehenderit ut
-            eiusmod labore consequat nulla nulla deserunt esse.
-        </p>
-    </div>
+        Nisi et commodo et velit. Excepteur ipsum minim occaecat ea adipisicing aute mollit voluptate ad pariatur
+        ipsum
+        nostrud nulla. Qui cupidatat aliqua irure in anim tempor id laborum voluptate adipisicing ipsum.
+        Exercitation
+        cillum occaecat nulla amet ad eiusmod magna quis excepteur reprehenderit tempor.
 
-    <!--FOOTER-->
+        Velit nostrud cupidatat eiusmod occaecat ex est officia dolore nisi. Velit deserunt anim irure tempor aliqua
+        excepteur nulla est nostrud et dolor fugiat id mollit. Eu irure reprehenderit nostrud irure magna ut. Duis
+        incididunt eu velit ea sunt irure nisi amet commodo cupidatat eu.
 
-    <div>
-        <footer>..::By Patagony crew::..</footer>
-    </div>
+        Ex officia est est veniam officia velit incididunt. Sit non amet cillum officia excepteur do fugiat esse
+        aute
+        magna. Culpa dolore nisi est aliqua occaecat proident ipsum ut. Aliquip consectetur ullamco reprehenderit ut
+        eiusmod labore consequat nulla nulla deserunt esse.
+    </p>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<!--FOOTER-->
+
+<div>
+    <footer>..::By Patagony crew::..</footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
